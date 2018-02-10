@@ -1,19 +1,16 @@
 import * as React from 'react';
 import './App.css';
 
-const logo = require('./logo.svg');
+interface AppState {
 
-class App extends React.Component {
+}
+
+class App extends React.Component<{}, AppState> {
   render() {
     return (
-      <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <h1 className="App-title">Welcome to React</h1>
-        </header>
-        <p className="App-intro">
-          To get started, edit <code>src/App.tsx</code> and save to reload.
-        </p>
+      <div className="AppContainer">
+        <h1>React Exercise</h1>
+        <h4>In idiomatic TypeScript, implement what is shown in the gif below</h4>
       </div>
     );
   }
